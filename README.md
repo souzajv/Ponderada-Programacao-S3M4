@@ -78,7 +78,7 @@ void loop() {
 }
 ```
 
-# 🛠️ Instruções para Upload
+### 🛠️ Instruções para Upload
 1. Conecte o ESP32 ao computador via cabo USB.
 2. Abra o Arduino IDE e selecione a placa ESP32 em Ferramentas > Placa.
 3. Escolha a porta correta em Ferramentas > Porta.
@@ -87,7 +87,7 @@ void loop() {
 
 **Observação:** Caso seja sua primeira vez utilizando o Arduino IDE para ESP32, assista esse [vídeo](https://www.youtube.com/watch?v=N0V2lDB0-7c).
 
-# 🎥 Demonstração em Vídeo
+## 🎥 Demonstração em Vídeo
 
 Veja também online pela plataforma [Wokwi](https://wokwi.com/projects/412934469930959873).
 
