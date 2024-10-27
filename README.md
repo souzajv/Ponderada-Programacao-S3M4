@@ -85,12 +85,11 @@ void loop() {
 4. Copie o código fornecido e cole-o no Arduino IDE.
 5. Clique em Upload para enviar o código para o ESP32.
 
-**Observação**
-Caso seja sua primeira vez utilizando o Arduino IDE para ESP32, assista esse [vídeo](https://www.youtube.com/watch?v=N0V2lDB0-7c).
+**Observação:** Caso seja sua primeira vez utilizando o Arduino IDE para ESP32, assista esse [vídeo](https://www.youtube.com/watch?v=N0V2lDB0-7c).
 
 # 🎥 Demonstração em Vídeo
 
-Veja também online pela plataforma (Wokwi)[https://wokwi.com/projects/412934469930959873].
+Veja também online pela plataforma [Wokwi](https://wokwi.com/projects/412934469930959873).
 
 # 🏆 Conclusão
 Este projeto é uma ótima forma de iniciar na programação de microcontroladores e na montagem de circuitos físicos com ESP32.
