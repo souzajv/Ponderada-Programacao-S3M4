@@ -1,4 +1,4 @@
-# 🚦 Projeto Semáforo com ESP32
+# 🚦 Projeto ESP32: Semáforo
 
 ## 📝 Descrição do Projeto
 Este projeto visa criar um sistema de semáforo utilizando um ESP32, LEDs e uma protoboard. O objetivo é montar fisicamente o semáforo e programá-lo para alternar entre as fases de forma automática, simulando um semáforo convencional.
