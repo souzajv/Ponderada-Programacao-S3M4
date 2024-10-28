@@ -33,17 +33,20 @@ O comportamento do semáforo deve seguir o seguinte ciclo:
 
 ### 📜 Código Arduino
 ```cpp
+//definição dos pinos para cada LED.
 int vermelho = 25;
 int amarelo = 32;
 int verde = 33;
 
 void setup() {
+  //inicializa a comunicação serial para enviar mensagens ao monitor serial.
   Serial.begin(9600);
+  //define os pinos dos LEDs como saída
   pinMode(vermelho, OUTPUT);
   pinMode(amarelo, OUTPUT);
   pinMode(verde, OUTPUT);
 }
-
+//função para acender o LED vermelho (indica "pare") e apagar os outros LEDs.
 void sinalVermelho() {
   digitalWrite(vermelho, 1);
   digitalWrite(amarelo, 0);
@@ -51,7 +54,7 @@ void sinalVermelho() {
   Serial.println("pare!");
   delay(6000);
 }
-
+//função para acender o LED amarelo (indica "atenção") e apagar os outros LEDs.
 void sinalAmarelo() {
   digitalWrite(vermelho, 0);
   digitalWrite(amarelo, 1);
@@ -59,7 +62,7 @@ void sinalAmarelo() {
   Serial.println("atenção!");
   delay(2000);
 }
-
+//função para acender o LED verde (indica "avance") e apagar os outros LEDs.
 void sinalVerde() {
   digitalWrite(vermelho, 0);
   digitalWrite(amarelo, 0);
@@ -67,7 +70,7 @@ void sinalVerde() {
   Serial.println("avance!");
   delay(2000);
 }
-
+//chama as funções criadas anteriormente na ordem solicitada pela atividade.
 void loop() {
   sinalVermelho();
   sinalAmarelo();
