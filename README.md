@@ -88,7 +88,7 @@ void loop() {
 **Observação:** Caso seja sua primeira vez utilizando o Arduino IDE para ESP32, assista esse [vídeo](https://www.youtube.com/watch?v=N0V2lDB0-7c).
 
 ## 🎥 Demonstração em Vídeo
-
+[Link para o vídeo](https://youtube.com/shorts/UQqu8HNu0Lo?feature=share)
 Veja também online pela plataforma [Wokwi](https://wokwi.com/projects/412934469930959873).
 
 # 🏆 Conclusão
