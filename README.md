@@ -1,12 +1,13 @@
-# 🚦 Projeto Arduino UNO: Semáforo
+# 🚦 Projeto Arduino UNO: Semáforo com Botão de Pausa
 
 ## 📝 Descrição do Projeto
-Este projeto visa criar um sistema de semáforo utilizando um Arduino UNO, LEDs e uma protoboard. O objetivo é montar fisicamente o semáforo e programá-lo para alternar entre as fases de forma automática, simulando um semáforo convencional.
+Este projeto visa criar um sistema de semáforo utilizando um Arduino UNO, LEDs e uma protoboard, agora com a adição de um botão que permite pausar o funcionamento do semáforo. O objetivo é montar fisicamente o semáforo e programá-lo para alternar entre as fases automaticamente, podendo ser pausado e retomado quando necessário.
 
 ## ⚙️ Parte 1: Montagem Física do Semáforo
 A montagem consiste em:
 - Conectar LEDs de cores vermelho, amarelo e verde a uma protoboard.
 - Utilizar resistores para proteger os LEDs.
+- Adicionar um botão para permitir a pausa do semáforo.
 - Garantir que a disposição dos fios seja organizada para melhor visualização.
 
 ### 🚨 Materiais Necessários
@@ -14,14 +15,19 @@ A montagem consiste em:
 - 1 Protoboard
 - 3 LEDs (Vermelho, Amarelo e Verde)
 - 3 Resistores (220Ω recomendados)
+- 1 Resistor de 10kΩ (para pull-down do botão)
 - Jumpers para conexões
+- 1 Botão push-button
 
 ### 🔧 Instruções de Montagem
-1. Conecte o LED vermelho ao pino digital **10** do Arduino UNO.
-2. Conecte o LED amarelo ao pino digital **12**.
-3. Conecte o LED verde ao pino digital **11**.
-4. Certifique-se de adicionar um resistor em série com cada LED para evitar sobrecarga.
-5. Organize os fios para facilitar a visualização e manutenção do projeto.
+1. Conecte o LED vermelho ao pino digital 10 do Arduino UNO.
+2. Conecte o LED amarelo ao pino digital 12.
+3. Conecte o LED verde ao pino digital 11.
+4. Adicione um resistor de 220Ω em série com cada LED para evitar sobrecarga.
+5. Conecte o botão ao pino digital 8 do Arduino UNO.
+6. Adicione um resistor de 10kΩ entre o pino digital 8 e o GND para manter o pino em estado baixo quando o botão não estiver pressionado.
+7. Conecte um jumper ao terminal positivo da protoboard, um ao pino 5V do Arduino UNO e outro ao GND.
+8. Organize os fios para facilitar a visualização e manutenção do projeto.
 
 ## 💻 Parte 2: Programação e Lógica do Semáforo
 O comportamento do semáforo deve seguir o seguinte ciclo:
@@ -30,6 +36,8 @@ O comportamento do semáforo deve seguir o seguinte ciclo:
 - 🟢 **2 segundos** no verde (avance!)
 - 🟢 **+2 segundos** no verde (tempo adicional para pedestres)
 - 🟡 **2 segundos** no amarelo (atenção!)
+
+Quando o botão é pressionado, o semáforo entra em pausa até que o botão seja liberado, permitindo controlar manualmente a pausa e retomada.
 
 ### 📜 Código Arduino UNO
 ```cpp
